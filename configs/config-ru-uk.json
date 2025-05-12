@@ -1,0 +1,7 @@
+{
+  "source_lang": "RU",
+  "target_lang": "UK",
+  "input_file": "io/input.xml",
+  "output_file": "io/output.xml",
+  "allowed_lang_codes": ["ru", "bg", "mk", "tl", "id", "uk"]
+}

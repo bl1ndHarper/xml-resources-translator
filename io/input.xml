@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="some_string">一些字符串</string>
+    <string name="some_other_string">其他字符串</string>
+    <string name="one_more_string_in_chinese">再加一个中文字符串</string>
+    <string name="there_can_be_hundreds">你明白我的意思</string>
+    <string name="even_thousands_of_strings">再加一个中文字符串</string>
+    <string name="any_language">再加一个中文字符串</string>
+    <string name="do_not_forget_to_create_a_config">再加一个中文字符串</string>
+    <string name="if_there_is_no_any_config_file_selected-the_default_one_will_be_used">"检查两次多字符串值，
+因为某些翻译器可能会将符号放在\"...\"之外，
+或生成其他一些 xml 语法错误和问题"</string>
+</resources>

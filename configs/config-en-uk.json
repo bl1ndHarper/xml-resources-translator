@@ -1,0 +1,7 @@
+{
+  "source_lang": "EN",
+  "target_lang": "UK",
+  "input_file": "io/input.xml",
+  "output_file": "io/output.xml",
+  "allowed_lang_codes": ["en", "de", "es", "it", "ro", "nl", "pt", "hu", "da", "fr", "pl", "no", "ca", "sv", "fi", "hr", "tl", "af", "et"]
+}
