@@ -4,10 +4,11 @@
     <string name="some_other_string">其他字符串</string>
     <string name="one_more_string_in_chinese">再加一个中文字符串</string>
     <string name="there_can_be_hundreds">你明白我的意思</string>
-    <string name="even_thousands_of_strings">再加一个中文字符串</string>
-    <string name="any_language">再加一个中文字符串</string>
+    <!-- TODO: [NOT_TRANSLATED: detected_lang = uk] --><string name="even_thousands_of_strings">Значення українською мовою</string>     <!-- this one has not been translated due to inappropriate language detected -->
+    <!-- DO_NOT_TRANSLATE --><string name="any_language">And another chinese string</string>    <!-- this one has already been proceeded by translator so it will not try to translate it the next pass -->
     <string name="do_not_forget_to_create_a_config">再加一个中文字符串</string>
     <string name="if_there_is_no_any_config_file_selected-the_default_one_will_be_used">"检查两次多字符串值，
 因为某些翻译器可能会将符号放在\"...\"之外，
 或生成其他一些 xml 语法错误和问题"</string>
+    <!-- DO_NOT_TRANSLATE --><string name="string_not_to_be_translated">com.addTheComment.andTranslator.WillNotTryToTranslateTheValue</string>
 </resources>

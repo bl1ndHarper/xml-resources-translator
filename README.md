@@ -27,8 +27,8 @@ Installation
 `pip install -r requirements.txt`
 
 3.  Create a `.env` file in the project root to store your secret keys:
-`DEEPL_API_KEY=your_deepl_api_key_here`
-`GOOGLE_APPLICATION_CREDENTIALS` (value is the path to your local Google API credential file)
+- `DEEPL_API_KEY=your_deepl_api_key_here`
+- `GOOGLE_APPLICATION_CREDENTIALS` (value is the path to your local Google API credential file)
 
 4.  Configure your translation settings inside the `configs/` folder, or use the default `config.json`.
     
@@ -70,15 +70,17 @@ translator/
 
 Usage
 --------
+1.  Put your resource .xml file according to the specified `input_file` path in the configuration.
 
-1.  Run the script:
-`python main.py`
+2.  Run the .bat or .sh depending on your system.
 
-2.  During execution, the program will ask:
+3.  During execution, the program will ask:
     
     *   To select a **configuration file** (or use the default).
         
     *   To select a **resource type**: `<string>` or `<item>`.
+
+    *   To select a **translator** (be careful as some of them might be more or less capable for different situations).
         
     *   Whether to:
         
@@ -86,7 +88,7 @@ Usage
             
         *   **Add comments** to successfully translated lines.
             
-3.  The translated file will be saved according to the specified `output_file` path in the configuration.
+4.  The translated file will be saved according to the specified `output_file` path in the configuration.
     
 
 * * *
@@ -121,7 +123,7 @@ Example `configs/config-en.json`:
     
 *   `target_lang` — target translation language code
     
-*   `allowed_lang_codes` — array of accepted languages for processing (empty array disables checking)
+*   `allowed_lang_codes` — array of accepted languages for processing (empty array disables checking). - These are used to filter inappropriate for your `source_lang` strings which should lower the count of API calls to prevent quota overuse.
     
 *   `input_file` — path to the input resource file
     
@@ -135,7 +137,7 @@ Extra Details
 
 *   If `allowed_lang_codes` is an empty array `[]`, **all lines are translated** regardless of detected language.
     
-*   Translated lines can be safely excluded from future sessions by inserting `<!-- DO_NOT_TRANSLATE -->`.
+*   Translated lines can be safely excluded from future sessions by inserting `<!-- DO_NOT_TRANSLATE -->` comment at the start of the line.
     
 *   Supports multi-line text blocks (`re.DOTALL` handling).
     
