@@ -158,7 +158,7 @@ Using config: config-cn-uk.json
 1. DeepL
 2. Google Cloud Translate
 3. Stub (fake)
-Select a translator (1 або 2): 2
+Select a translator (1 or 2): 2
 🧩 Available resource types to work with:
 1. strings (<string />)
 2. arrays (<[type]-array><item /><[type]-array>)
@@ -175,7 +175,7 @@ Select a type (1 or 2): 1
 🔵 Translated lines: 185
 🟠 Skipped due to language mismatch: 12
 🚫 Skipped due to DO_NOT_TRANSLATE mark: 5
-📄 Output saved as: output/strings_en.xml
+📄 Output saved as: io/output.xml
 
 ```
 
